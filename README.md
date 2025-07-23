@@ -44,6 +44,31 @@ The script ( packets.sh ) expects access to Linux network interface stats, so yo
 
 ---
 
+## 📄 Log File Format
+
+Each line contains 12 pipe-separated columns ( packet_stats_all_interfaces.txt ):
+
+ID | Timestamp | Interface | RX pps | TX pps | Total RX | Total TX | UDP RX | UDP TX | ICMP RX | ICMP TX | Total Packets
+
+```
+| Field          | Description                                      | Example        |
+|----------------|-------------------------------------------------|----------------|
+| `ID`           | Unique record identifier                          | `12345`        |
+| `Timestamp`    | UNIX timestamp of the record                      | `1690200000`   |
+| `Interface`    | Network interface name (or `*`)                   |       `*`      |
+| `RX pps`       | Received packets per second                       | `500`          |
+| `TX pps`       | Transmitted packets per second                    | `480`          |
+| `Total RX`     | Total packets received                            | `1050000`      |
+| `Total TX`     | Total packets transmitted                         | `1020000`      |
+| `UDP RX`       | Total UDP packets received                         | `250000`       |
+| `UDP TX`       | Total UDP packets transmitted                      | `240000`       |
+| `ICMP RX`      | Total ICMP packets received                        | `5000`         |
+| `ICMP TX`      | Total ICMP packets transmitted                     | `4800`         |
+| `Total Packets`| Total packets (received + transmitted)            | `2070000`      |
+```
+
+---
+
 ## Usage 🏃‍♂️
 
 1. Place `packet_stats_all_interfaces.txt` in the same directory as the script ( this file is automatically created )
