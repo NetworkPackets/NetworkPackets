@@ -55,7 +55,7 @@ ID | Timestamp | Interface | RX pps | TX pps | Total RX | Total TX | UDP RX | UD
 |----------------|---------------------------------------------------|----------------|
 | `ID`           | Unique record identifier                          | `12345`        |
 | `Timestamp`    | UNIX timestamp of the record                      | `1690200000`   |
-| `Interface`    | Network interface name (or `*`)                   |       `*`      |
+| `Interface`    | Network interface name (or `*`)                   | `*`            |
 | `RX pps`       | Received packets per second                       | `500`          |
 | `TX pps`       | Transmitted packets per second                    | `480`          |
 | `Total RX`     | Total packets received                            | `1050000`      |
