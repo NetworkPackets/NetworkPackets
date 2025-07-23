@@ -44,7 +44,7 @@ The script ( packets.sh ) expects access to Linux network interface stats, so yo
 
 ---
 
-## 📄 Log File Format
+## Log File Format 📄
 
 Each line contains 12 pipe-separated columns ( packet_stats_all_interfaces.txt ):
 
