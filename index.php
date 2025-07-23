@@ -162,7 +162,7 @@ echo "<br>Executed in: " . round(microtime(true) - $start_time, 4) . " seconds";
 echo "<br>RAM usage: " . round(memory_get_usage() / 1024 / 1024, 2) . " MB";
 ?>
 <br>Made with ❤
-<br>v<?php echo file_get_contents("version");?>
+<br>v<?php echo $version;?>
 </center>
 </body>
 </html>
