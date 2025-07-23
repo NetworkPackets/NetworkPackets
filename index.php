@@ -1,6 +1,9 @@
 <?php
 $start_time = microtime(true);
 
+//Read secret key from file secret
+$secret      = file_get_contents("secret");
+
 // ┌──────────── Config ─────────────┐
 $logfile     = __DIR__ . '/' . $secret . '_packet_stats_all_interfaces.txt';
 $limit       = 20;
@@ -11,9 +14,6 @@ $textColor   = '#0f0';
 $headerBg    = '#050';
 $rowAltBg    = '#020';
 // └─────────────────────────────────┘
-
-//Read secret key from file secret
-$secret      = file_get_contents("secret");
 
 // Read log file once
 $lines = is_readable($logfile) ? file($logfile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) : [];
