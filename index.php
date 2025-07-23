@@ -19,6 +19,9 @@ if (!$lines) {
 }
 $header = array_shift($lines); // Remove header if present
 
+// Read version
+$version = file_get_contents("version");
+
 // Parse and sanitize all lines
 $data = [];
 $maxRx = ['value' => 0, 'ts' => 0];
@@ -87,7 +90,7 @@ function readLineByNumber(array $lines, int $lineNumber): ?string {
   </style>
 </head>
 <body>
-  <table><center><pre><?php echo file_get_contents("logo.txt");?></pre></center>
+  <table><center><pre><?php echo file_get_contents("logo");?></pre></center>
     <center><pre>
 Max RX Pps: <?= number_format($maxRx['value']) ?> (<?= date($dateFormat, $maxRx['ts']) ?>)
 Max TX Pps: <?= number_format($maxTx['value']) ?> (<?= date($dateFormat, $maxTx['ts']) ?>)
@@ -159,6 +162,7 @@ echo "<br>Executed in: " . round(microtime(true) - $start_time, 4) . " seconds";
 echo "<br>RAM usage: " . round(memory_get_usage() / 1024 / 1024, 2) . " MB";
 ?>
 <br>Made with ❤
+<br>v<?php echo file_get_contents("version");?>
 </center>
 </body>
 </html>
