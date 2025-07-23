@@ -83,7 +83,7 @@ ID | Timestamp | Interface | RX pps | TX pps | Total RX | Total TX | UDP RX | UD
 You can adjust these at the top of the PHP file:
 
 ```php
-$logfile     = __DIR__ . '/packet_stats_all_interfaces.txt'; // log file path
+$logfile     = __DIR__ . '/' . $secret . '_packet_stats_all_interfaces.txt'; // log file path
 $limit       = 20;                                         // number of recent records to display
 $dateFormat  = 'Y-m-d H:i:s';                              // timestamp format
 
