@@ -35,6 +35,15 @@ A simple script(s) to display and log **network packet statistics** from log fil
 
 ---
 
+### System Permissions 🔐
+
+The script ( packets.sh ) expects access to Linux network interface stats, so your environment must allow:
+
+  - 📂 Reading network interface details from **`/sys/class/net`**  
+  - ⚙️ Access to system commands like **`netstat`** to gather live network data  
+
+---
+
 ## Usage 🏃‍♂️
 
 1. Place `packet_stats_all_interfaces.txt` in the same directory as the script ( this file is automatically created )
