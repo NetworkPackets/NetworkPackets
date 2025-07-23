@@ -1,7 +1,10 @@
 #!/bin/bash
 
+# Read secret 
+SECRET=$(<secret)
+
 # Output log file
-OUTPUT_FILE="packet_stats_all_interfaces.txt"
+OUTPUT_FILE="${SECRET}_packet_stats_all_interfaces.txt"
 
 # Interval between measurements
 INTERVAL=1
