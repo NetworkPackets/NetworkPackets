@@ -135,9 +135,6 @@ total_packets	Total packets (received + transmitted)
 
 🚀 Example Usage
 ```
-Fetch the last 10 records:
-curl "https://server/api.php?limit=10"
-
 Fetch record with ID 100:
 curl "https://server/api.php?id=100"
 
