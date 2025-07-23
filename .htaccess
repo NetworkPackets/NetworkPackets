@@ -1,0 +1,15 @@
+RewriteEngine On
+
+# API URL rewrites to api.php with query parameters
+
+# Summary endpoint
+RewriteRule ^api/summary$ api.php?summary=1 [QSA,L]
+
+# By ID endpoint
+RewriteRule ^api/id/([0-9]+)$ api.php?id=$1 [QSA,L]
+
+# By limit endpoint
+RewriteRule ^api/limit/([0-9]+)$ api.php?limit=$1 [QSA,L]
+
+# Frontend URL rewriting for index.php with ID parameter
+RewriteRule ^id/([0-9]+)/?$ index.php?id=$1 [QSA,L]
