@@ -10,7 +10,7 @@ OUTPUT_FILE="${SECRET}_packet_stats_all_interfaces.txt"
 INTERVAL=1
 
 # ID tracking
-ID_FILE="last_id.txt"
+ID_FILE="${SECRET}_last_id.txt"
 
 # Previous packet counters
 prev_rx=0
