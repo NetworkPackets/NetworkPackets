@@ -35,7 +35,7 @@ A simple script(s) to display and log **network packet statistics** from log fil
 
 ---
 
-### System Permissions 🔐
+## System Permissions 🔐
 
 The script ( packets.sh ) expects access to Linux network interface stats, so your environment must allow:
 
