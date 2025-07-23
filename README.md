@@ -51,8 +51,8 @@ Each line contains 12 pipe-separated columns ( packet_stats_all_interfaces.txt )
 ID | Timestamp | Interface | RX pps | TX pps | Total RX | Total TX | UDP RX | UDP TX | ICMP RX | ICMP TX | Total Packets
 
 ```
-| Field          | Description                                      | Example        |
-|----------------|--------------------------------------------------|----------------|
+| Field          | Description                                       | Example        |
+|----------------|---------------------------------------------------|----------------|
 | `ID`           | Unique record identifier                          | `12345`        |
 | `Timestamp`    | UNIX timestamp of the record                      | `1690200000`   |
 | `Interface`    | Network interface name (or `*`)                   |       `*`      |
