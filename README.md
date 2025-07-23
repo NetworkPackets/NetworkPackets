@@ -2,6 +2,8 @@
 
 A simple script(s) to display and log **network packet statistics** from log file in a clean, color-coded web interface.
 
+![NetworkPackets Screenshot](https://i.imgur.com/SMZ4q3H.png)
+
 ---
 
 ## Features ✨
