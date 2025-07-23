@@ -37,9 +37,10 @@ A simple script(s) to display and log **network packet statistics** from log fil
 
 ## Usage 🏃‍♂️
 
-1. Place `packet_stats_all_interfaces.txt` in the same directory as the script  
-2. Open the PHP script in a browser via your web server  
-3. View network packet statistics updated live from the log  
+1. Place `packet_stats_all_interfaces.txt` in the same directory as the script ( this file is automatically created )
+2. Run packets.sh in tmux or screen
+3. Open the PHP script ( index.php or api.php ) in a browser via your web server  
+4. View network packet statistics updated live from the log
 
 ---
 
