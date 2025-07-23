@@ -1,7 +1,8 @@
 <?php
 header('Content-Type: application/json');
 
-$logfile = __DIR__ . '/packet_stats_all_interfaces.txt';
+$secret = file_get_contents("secret");
+$logfile = __DIR__ . '/'. $secret . '_packet_stats_all_interfaces.txt';
 $dateFormat = 'Y-m-d H:i:s';
 
 // --- SECURITY: Check if log file is readable before processing ---
