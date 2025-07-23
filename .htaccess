@@ -1,5 +1,9 @@
 RewriteEngine On
 
+<Files "secret">
+  Require all denied
+</Files>
+
 # API URL rewrites to api.php with query parameters
 
 # Summary endpoint
