@@ -3,7 +3,7 @@ $start_time = microtime(true);
 
 // ┌──────────── Config ─────────────┐
 $secret      = file_get_contents("secret");
-$logfile     = __DIR__ . '/'.'$secret.'_packet_stats_all_interfaces.txt';
+$logfile     = __DIR__ . '/' . $secret . '_packet_stats_all_interfaces.txt';
 $limit       = 20;
 $dateFormat  = 'Y-m-d H:i:s';
 
